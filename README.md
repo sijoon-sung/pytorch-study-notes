@@ -1,20 +1,27 @@
-# PyTorch: 텐초의 파이토치 연구 저장소
+# PyTorch Deep Learning Research Notes
 
-이 저장소는 오비시디언 볼트에서 관리되는 딥러닝 연구 노트를 GitHub와 동기화하기 위한 용도입니다. 단순한 요약을 넘어 시스템 아키텍처와 논문 관점에서의 심층 분석을 목표로 합니다.
+오비시디언 기반의 파이토치(PyTorch) 심층 연구 저장소입니다. 단순 요약을 넘어 수학적 증명과 시스템 최적화 관점에서 딥러닝을 분석합니다.
 
-## 📚 연구 프레임워크 (Research Framework)
+## 🔬 Research Pillars
 
-모든 장은 다음 세 가지 관점으로 나누어 분석합니다:
+모든 분석은 아래의 **3-Step Framework**를 따릅니다:
 
-1. **[Concept]**: 알고리즘의 수학적 증명, 비용 함수, 시간/공간 복잡도(Big-O) 분석.
-2. **[Code]**: Scikit-Learn, TensorFlow, PyTorch를 활용한 베이스라인 파이프라인 구축 및 효율적인 모듈 설계.
-3. **[Experiment]**: 알고리즘의 한계 노출(Stress Test), 하이퍼파라미터 튜닝, 메모리/추론 속도(Latency) 최적화 등 논문 및 시스템 아키텍처 관점의 한계 극복 실험.
+1.  **[Concept]**: 알고리즘의 수학적 증명, 비용 함수 분석, 시간/공간 복잡도(Big-O) 평가.
+2.  **[Code]**: 효율적인 파이프라인 설계 및 PyTorch 기반 베이스라인 모듈화 구현.
+3.  **[Experiment]**: 하이퍼파라미터 튜닝, 추론 속도(Latency) 최적화 및 시스템 아키텍처 관점의 한계 테스트.
 
 ---
 
-## 📂 저장소 구조 (Repository Structure)
+## 📂 Repository Structure
 
-- `CHAP_X/`
-    - `Concept/`: 핵심 이론 및 수식 분석.
-    - `Code/`: 베이스라인 및 구현 코드.
-    - `Experiment/`: 한계 극복 및 최적화 실험 리포트.
+```text
+root/
+├── MOC.md              # 연구 목차 및 진행 현황 (Map of Contents)
+├── CHAP_X/             # 각 챕터별 연구 폴더
+│   ├── Concept/        # 이론 및 수식 분석
+│   ├── Code/           # 구현 코드 (Baseline)
+│   └── Experiment/     # 최적화 및 한계 돌파 실험
+└── README.md
+```
+
+**Last Updated**: 2026-02-28
